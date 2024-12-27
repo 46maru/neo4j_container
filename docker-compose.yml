@@ -12,8 +12,8 @@ services:
 
   python:
     build: 
-      context: ./docker
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: docker/Dockerfile
     tty: true
     volumes:
       - ./src/:/workspace
